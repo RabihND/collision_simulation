@@ -5,7 +5,19 @@
 Our training will be based on **simple circles**.
 We can modify the characteristics of the circles to reflect the qualities they represent: We can use circles to make it simpler to use arithmetic to compute collisions, and we can change the properties of the circles to reflect the qualities they represent: More bulk, for example, or a larger radius.
 
-__>> Let’s take a quick walk through our code now.__
+# What do we need to know to simulate a collision?
+Before we can simulate a collision, we need to know a few things.
+First, we must determine which, if any, two objects are colliding.
+We need to find out how fast the two items are colliding, the angle of incidence (which we'll look at in a minute), and the mass of each of the objects once we know which two things are colliding. 
+
+▪️**So, how can we figure out which objects are colliding?**
+
+When you utilize circles, it's quite basic. Every point around the circumference is the same distance from the center as every other point; the radius is the measurement from the edge to the center. We can tell if two items' outlines meet by calculating the distance between their centers. We can deduce that two circles are colliding if the distance between their centers is smaller than the radius of each circle combined together.
+
+
+
+
+## >> Let’s take a quick walk through our code now.
 
 The top of **collisions.py** (between lines 1-24) imports the modules we’ll need for our code and declares the variables that we’ll be using throughout the tutorial. 
 ```python
