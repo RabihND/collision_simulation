@@ -107,3 +107,8 @@ def handleMouseDown():
 		"position" : [0,0]
 	}
 
+def quitGame():
+	pygame.quit()
+	sys.exit()
+
+# 'main' loop
