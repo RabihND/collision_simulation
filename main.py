@@ -62,3 +62,54 @@ def calculateMovement():
 				theOtherObject["velocity"][1] -= appliedForce[1]
 				if drawAttractions is True:
 					pygame.draw.line(surface, (255,255,255), (anObject["position"][0],anObject["position"][1]), (theOtherObject["position"][0],theOtherObject["position"][1]), 1)
+
+def handleCollisions():
+
+	h = 0
+
+	while h < len(collidables):
+
+		i = 0
+
+		anObject = collidables[h]
+
+		while i < len(collidables):
+
+			otherObject = collidables[i]
+
+			if anObject != otherObject:
+
+				distance = math.hypot(otherObject["position"][0] - anObject["position"][0], otherObject["position"][1] - anObject["position"][1])
+
+				if distance < otherObject["radius"] + anObject["radius"]:
+
+					# First we get the angle of the collision between the two objects
+					collisionAngle = math.atan2(anObject["position"][1] - otherObject["position"][1], anObject["position"][0] - otherObject["position"][0])
+
+					#Then we need to calculate the speed of each object
+					anObjectSpeed = math.sqrt(anObject["velocity"][0] * anObject["velocity"][0] + anObject["velocity"][1] * anObject["velocity"][1])
+					theOtherObjectSpeed = math.sqrt(otherObject["velocity"][0] * otherObject["velocity"][0] + otherObject["velocity"][1] * otherObject["velocity"][1])
+
+					# Now, we work out the direction of the objects in radians
+					anObjectDirection = math.atan2(anObject["velocity"][1], anObject["velocity"][0])
+					theOtherObjectDirection = math.atan2(otherObject["velocity"][1], otherObject["velocity"][0])
+
+					# Now we calculate the new X/Y values of each object for the collision
+					anObjectsNewVelocityX = anObjectSpeed * math.cos(anObjectDirection - collisionAngle)
+					anObjectsNewVelocityY = anObjectSpeed * math.sin(anObjectDirection - collisionAngle)
+
+					otherObjectsNewVelocityX = theOtherObjectSpeed * math.cos(theOtherObjectDirection - collisionAngle)
+					otherObjectsNewVelocityY = theOtherObjectSpeed * math.sin(theOtherObjectDirection - collisionAngle)
+					
+					# We adjust the velocity based on the mass of the objects
+					anObjectsFinalVelocityX = ((anObject["mass"] - otherObject["mass"]) * anObjectsNewVelocityX + (otherObject["mass"] + otherObject["mass"]) * otherObjectsNewVelocityX)/(anObject["mass"] + otherObject["mass"])
+					otherObjectsFinalVelocityX = ((anObject["mass"] + anObject["mass"]) * anObjectsNewVelocityX + (otherObject["mass"] - anObject["mass"]) * otherObjectsNewVelocityX)/(anObject["mass"] + otherObject["mass"])
+
+					# Now we set those values
+					anObject["velocity"][0] = anObjectsFinalVelocityX
+					otherObject["velocity"][0] = otherObjectsFinalVelocityX
+
+
+			i += 1
+
+		h += 1
