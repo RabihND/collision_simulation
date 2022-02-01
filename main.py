@@ -95,4 +95,15 @@ def handleCollisions():
 			i += 1
 		h += 1
 
-		
+
+
+def handleMouseDown():
+	global currentObject
+
+	currentObject = {
+		"radius" : 3,
+		"mass" : 3,
+		"velocity" : [0,0],
+		"position" : [0,0]
+	}
+
