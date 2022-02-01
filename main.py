@@ -113,54 +113,41 @@ def quitGame():
 
 # 'main' loop
 if __name__=="__main__":
-while True:
-	surface.fill((0,0,0))
-	mousePosition = pygame.mouse.get_pos()
-
-	# Handle user and system events 
-	for event in GAME_EVENTS.get():
-
-		if event.type == pygame.KEYDOWN:
-
-			if event.key == pygame.K_ESCAPE:
+	while True:
+		surface.fill((0,0,0))
+		mousePosition = pygame.mouse.get_pos()
+		# Handle user and system events 
+		for event in GAME_EVENTS.get():
+			if event.type == pygame.KEYDOWN:
+				if event.key == pygame.K_ESCAPE:
+					quitGame()
+			if event.type == pygame.KEYUP:
+				if event.key == pygame.K_r:
+					collidables = []
+				if event.key == pygame.K_a:
+					if drawAttractions is True:
+						drawAttractions = False
+					elif drawAttractions is False:
+						drawAttractions = True
+			if event.type == pygame.MOUSEBUTTONDOWN:
+				mouseDown = True
+				handleMouseDown()
+			if event.type == pygame.MOUSEBUTTONUP:
+				mouseDown = False
+			if event.type == GAME_GLOBALS.QUIT:
 				quitGame()
-
-		if event.type == pygame.KEYUP:
-
-			if event.key == pygame.K_r:
-				collidables = []
-			if event.key == pygame.K_a:
-				if drawAttractions is True:
-					drawAttractions = False
-				elif drawAttractions is False:
-					drawAttractions = True
-
-		if event.type == pygame.MOUSEBUTTONDOWN:
-			mouseDown = True
-			handleMouseDown()
-
-		if event.type == pygame.MOUSEBUTTONUP:
-			mouseDown = False
-
-		if event.type == GAME_GLOBALS.QUIT:
-			quitGame()
-
-	calculateMovement()
-	handleCollisions()
-	drawCollidables()
-
-	if currentObject is not None:
-		drawCurrentObject()
-
-		# If our user has released the mouse, add the new anObject to the collidables list and let gravity do its thing
-		if mouseDown is False:
-			currentObject["velocity"][0] = (mousePosition[0] - previousMousePosition[0]) / 4
-			currentObject["velocity"][1] = (mousePosition[1] - previousMousePosition[1]) / 4
-			collidables.append(currentObject)
-			currentObject = None
-
-	# Store the previous mouse coordinates to create a vector when we release a new anObject
-	previousMousePosition = mousePosition
-
-	clock.tick(60)
-	pygame.display.update()
+		calculateMovement()
+		handleCollisions()
+		drawCollidables()
+		if currentObject is not None:
+			drawCurrentObject()
+			# If our user has released the mouse, add the new anObject to the collidables list and let gravity do its thing
+			if mouseDown is False:
+				currentObject["velocity"][0] = (mousePosition[0] - previousMousePosition[0]) / 4
+				currentObject["velocity"][1] = (mousePosition[1] - previousMousePosition[1]) / 4
+				collidables.append(currentObject)
+				currentObject = None
+		# Store the previous mouse coordinates to create a vector when we release a new anObject
+		previousMousePosition = mousePosition
+		clock.tick(60)
+		pygame.display.update()
