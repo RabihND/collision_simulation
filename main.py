@@ -112,7 +112,7 @@ def quitGame():
 	sys.exit()
 
 # 'main' loop
-
+while True:
 	surface.fill((0,0,0))
 	mousePosition = pygame.mouse.get_pos()
 
