@@ -96,12 +96,12 @@ Major frameworks/libraries used in this project:
   <div class="column" style="  float: left;
   width: 33.33%;
   padding: 5px;">
-    <img src="./stuff/not_coll.png" alt="Snow" style="width:20%">
+    <img src="./stuff/not_coll.png" alt="Snow" style="width:50%">
   </div>
   <div class="column"  style="  float: left;
   width: 33.33%;
   padding: 5px;">
-    <img src="./stuff/yes_coll.png" alt="Forest" style="width:20%">
+    <img src="./stuff/yes_coll.png" alt="Forest" style="width:50%">
   </div>
 </div> 
 
