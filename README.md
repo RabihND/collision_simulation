@@ -152,22 +152,11 @@ a new moving object.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x]
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ---
-<div align="center">
-<p>
-<img src="./stuff/logo.png" width="110">
-<p align="center"><b>
-Amirkabir University  of Technology</b>
 
-(Tehran Polytechnic)
-</p>
-</p>
-</div>
 
 
 
