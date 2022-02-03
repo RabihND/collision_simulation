@@ -106,15 +106,17 @@ Major frameworks/libraries used in this project:
 </div> 
 
 
+**3. main.py [Introduction]**
 
-**3. GameOverWindow Class** (GUI_Window)
+<p align="justify">The logic for our keyboard ⌨️ and mouse 🖱️ interactions, as well as our main loop, is found on lines 137-202. Clicking in our window will produce a new particle that will only effect the movement of other particles once the mouse is released. The particle will inherit the velocity of the mouse pointer if the mouse was moving when it was released.</p>
 
-The resulting window, which shows the player's loss(+) or victory(-).
-- **display_text()**: Return a text with include the result of the game.(Win/Loss)
+**4. calculateMovement() Function** 
+<p align="justify">All of our objects will have a mass and will attract every other object gravitationally using the <b>calculateMovement()</b> method,which handles the 
+gravity of all of our objects.</p>
 
-**4. Splash Screen Class** (GUI_Windows)
->{⌛} 
+<p align="justify">The last section of <b>calculateMovement()</b>  doesn’t have anything to do with moving the circles: it simply draws a line between our droped circle and every other circle that it’s having an effect on. It’s the line of attraction we looked at earlier, and it illustrates the directions that gravity is pulling our circles in. </p>
 
+> You can toggle this on and off with the ‘A’ key.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
