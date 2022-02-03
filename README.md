@@ -116,31 +116,20 @@ gravity of all of our objects.</p>
 
 <p align="justify">The last section of <b>calculateMovement()</b>  doesn’t have anything to do with moving the circles: it simply draws a line between our droped circle and every other circle that it’s having an effect on. It’s the line of attraction we looked at earlier, and it illustrates the directions that gravity is pulling our circles in. </p>
 
-> You can toggle this on and off with the ‘A’ key.
+> You can toggle this on and off with the ‘**A**’ key.
 
+**5. handleCollisions() Function** 
+<p align="justify">The <b>handleCollisions()</b> method, which can be found on lines 86-135. Here, we check for colliding objects and adjust their trajectories accordingly</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- RESULTS -->
 ## Results
 
-**GUI OUTPUT:**
-<details>
-<summary>ScreenShoot Preview 🖼️</summary>
-  <body>
-    <p align="center"> <img src="./stuff/GUI_output.jpg" width="200"> </p>
-  </body>
-</details>
-
----
-
-**TERMINAL OUTPUT:**
-<details>
-<summary>ScreenShoot Preview 🖼️</summary>
-  <body>
-    <p align="center"> <img src="./stuff/terminal_output.jpg" width="300"> </p>
-  </body>
-</details>
+> **Left button** :Use the
+mouse to create
+a new moving object.
+<p align="center"> <img  src="./stuff/Run.png" width="500"> </p>  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
