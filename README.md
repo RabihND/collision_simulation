@@ -1,13 +1,11 @@
 <div id="top"></div>
 
 <p align="center">
-    <a  alt="Downloads">
-        <img src="https://img.shields.io/github/downloads/RabihND/collision_simulation/total?logo=App%20Store&logoColor=white&style=for-the-badge" /></a>
     <a href="https://github.com/RabihND/collision_simulation/graphs/contributors" alt="Contributers">
         <img src="https://img.shields.io/github/contributors/RabihND/collision_simulation?color=6fd671&logo=WhiteSource&style=for-the-badge" /></a>
     <a href="https://github.com/RabihND/collision_simulation/network/members" alt="Forks">
         <img src="https://img.shields.io/github/forks/RabihND/collision_simulation?color=cccccc&logo=Node-RED&style=for-the-badge" /></a>
-    <a href=" https://github.com/RabihND/collision_simulation/stargazers">
+    <a href="https://github.com/RabihND/collision_simulation/stargazers">
         <img src="https://img.shields.io/github/stars/RabihND/collision_simulation?color=8e6be8&logo=Ethereum&logoColor=8e6be8&style=for-the-badge" alt="Stars" /></a>
     <a alt="Visitors">
         <img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=RabihND/collision_simulation?color=14adfa&logo=Android&style=for-the-badge" /></a>
