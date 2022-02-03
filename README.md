@@ -81,22 +81,31 @@ Major frameworks/libraries used in this project:
 
 <!-- PARTS -->
 ## Parts
-**1.What do we need to know to simulate a collision?**
+**1. What do we need to know to simulate a collision?**
 
-<p align="justify">Before we can simulate a collision, we need to know a few things. 
+<i>"Before we can simulate a collision, we need to know a few things."</i> 
 
-First, we must determine which, if any, two objects are colliding.We need to find out how fast the two items are colliding, the angle of incidence , and the mass of each of the objects once we know which two things are colliding. </p>
+<p align="justify">First, we must determine which, if any, two objects are colliding.We need to find out how fast the two items are colliding, the angle of incidence , and the mass of each of the objects once we know which two things are colliding. </p>
  
-**2. MainWindowUi  Class** (GUI_Window)
+**2. So, how can we figure out which objects are colliding?** 
 
-The main window of the game designed by Qt; it contains:
-- **setupUi()**: The QT codes that generate the main window.
-- **resetButtonClicked()**:  That delete the selected colors.
-- **set_thisguesstable()**: connect the colors.
-- **clicked_color()**: Send the selected colors to the Guess table.
-- **clicked_submit()**:  After clicking the submit button; its check the guess and return the score to the Scores Table.
-- **show_game_over()**: Show the Game Over Dialog.
--**print_score()**: print score in the terminal (NOT GUI).
+<p align="justify">When you utilize circles, it's quite basic. Every point around the circumference is the same distance from the center as every other point; the radius is the measurement from the edge to the center. We can tell if two items' outlines meet by calculating the distance between their centers. We can deduce that two circles are colliding if the distance between their centers is smaller than the radius of each circle combined together.</p>
+
+
+<div class="row"  style="display: table; text-align:center;">
+  <div class="column" style="  float: left;
+  width: 33.33%;
+  padding: 5px;">
+    <img src="./stuff/not_coll.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column"  style="  float: left;
+  width: 33.33%;
+  padding: 5px;">
+    <img src="./stuff/yes_coll.png" alt="Forest" style="width:100%">
+  </div>
+</div> 
+
+
 
 **3. GameOverWindow Class** (GUI_Window)
 
