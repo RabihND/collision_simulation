@@ -138,12 +138,8 @@ a new moving object.
 <!-- REFERENCES -->
 ## Refenences
 
-🔎
-
 - [Raspberry Pi MagPy magazine](https://magpi.raspberrypi.com/)
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contacts
@@ -156,13 +152,7 @@ a new moving object.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Write the main code-map.
-- [x] Design the GUI window. 
-- [x] Write the MasterMain Core Functions.
-- [x] Design the GameOver window.
-- [x] <a href="https://github.com/RabihND/AP2021-2022-Final/releases/latest"><strong>Build the .EXE Release</strong></a>
-- [ ] Splash screen
-- [ ] Build APK release.
+- [x]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
