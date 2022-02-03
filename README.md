@@ -1,7 +1,5 @@
 <div id="top"></div>
 
-<h1 align="center"> AP course project  </h1>
-
 <p align="center">
     <a alt="Version">
         <img src="https://img.shields.io/github/v/release/RabihND/collision_simulation?color=14adfa&logo=Semantic%20Web&logoColor=14adfa&style=for-the-badge" /></a>
@@ -56,7 +54,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<p align="center"> <img  src="./stuff/mastermind.jpg" width="1000"> </p>  
+<p align="center"> <img  src="./stuff/Elastic_collision.png" width="300"> </p>  
 <b> Circles which can bounce off one another if they collide.</b>
 
 > Our training will be based on **simple circles**.
@@ -129,14 +127,15 @@ gravity of all of our objects.</p>
 > **Left button** :Use the
 mouse to create
 a new moving object.
-<p align="center"> <img  src="./stuff/Run.png" width="500"> </p>  
+<p align="center"> <img  src="./stuff/Run.png" width="150"> </p>  
+<details>
+<summary>ScreenCapture Preview 🖼️</summary>
+  <body>
+    <p align="center"> <img src="./stuff/collision.gif" width="300"> </p>
+  </body>
+</details>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -145,6 +144,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 🔎
 
+- [Raspberry Pi MagPy magazine](https://magpi.raspberrypi.com/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -152,12 +152,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contacts
 
-
-Rabih ND - [@RabihND](https://github.com/RabihND) 
-
-Hasan Sanei - [@hasansanei](https://github.com/hasansanei)
-
-**Project Link:** [https://github.com/RabihND/AP2021-2022-Final](https://github.com/RabihND/AP2021-2022-Final)
+**Project Link:** [https://github.com/RabihND/collision_simulation](https://github.com/RabihND/collision_simulation)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
