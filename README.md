@@ -1,8 +1,6 @@
 <div id="top"></div>
 
 <p align="center">
-    <a alt="Version">
-        <img src="https://img.shields.io/github/v/release/RabihND/collision_simulation?color=14adfa&logo=Semantic%20Web&logoColor=14adfa&style=for-the-badge" /></a>
     <a  alt="Downloads">
         <img src="https://img.shields.io/github/downloads/RabihND/collision_simulation/total?logo=App%20Store&logoColor=white&style=for-the-badge" /></a>
     <a href="https://github.com/RabihND/collision_simulation/graphs/contributors" alt="Contributers">
@@ -13,8 +11,6 @@
         <img src="https://img.shields.io/github/stars/RabihND/collision_simulation?color=8e6be8&logo=Ethereum&logoColor=8e6be8&style=for-the-badge" alt="Stars" /></a>
     <a alt="Visitors">
         <img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=RabihND/collision_simulation?color=14adfa&logo=Android&style=for-the-badge" /></a>
-    <a href="https://github.com/RabihND/collision_simulation/master/LICENSE.txt">
-        <img src="https://img.shields.io/github/license/RabihND/collision_simulation?color=%2363afdb&logo=letsencrypt&style=for-the-badge" alt="License"></a>
     
 </p>
 
