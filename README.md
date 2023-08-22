@@ -8,7 +8,7 @@
     <a href="https://github.com/RabihND/collision_simulation/stargazers">
         <img src="https://img.shields.io/github/stars/RabihND/collision_simulation?color=8e6be8&logo=Ethereum&logoColor=8e6be8&style=for-the-badge" alt="Stars" /></a>
     <a alt="Visitors">
-        <img src="https://visitor-badge-reloaded.herokuapp.com/badge?page_id=RabihND/collision_simulation?color=14adfa&logo=Android&style=for-the-badge" /></a>
+        <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FRabihND%2FSecretMsg&label=Visitors&countColor=%23263759&style=flat-square labelStyle=upper"/></a>
     
 </p>
 
